@@ -221,9 +221,10 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #1e1e1e!important;
+  width: 196; height: 95;
 }
 
-.logo{width: 196; height: 95;}
+/* .logo{width: 196; height: 95;} */
 
 .background-header .main-nav .nav li:hover a {
   color: #2a2a2a!important;
