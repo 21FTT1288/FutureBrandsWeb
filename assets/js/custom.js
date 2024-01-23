@@ -187,6 +187,14 @@
 
 })(window.jQuery);
 
-const test = context.env.futurebrands_db.prepare('SELECT * FROM Items');
+// const test = context.env.futurebrands_db.prepare('SELECT * FROM Items');
 
-document.getElementById("test").innerHTML = test;
+// document.getElementById("test").innerHTML = test;
+
+export async function onRequest(context) {
+	// Create a prepared statement with our query
+	const ps = context.env.futurebrands_db.prepare('SELECT * from Items');
+	const data = await ps.first();
+  
+	return Response.json(data);
+  }
