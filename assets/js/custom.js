@@ -186,3 +186,5 @@
 
 
 })(window.jQuery);
+
+document.getElementById("test").innerHTML = "aaaaaaaaaaaa";
