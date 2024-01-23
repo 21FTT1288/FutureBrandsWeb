@@ -191,6 +191,8 @@
 
 // document.getElementById("test").innerHTML = test;
 
+async function onRequest(context) {
+
 	const ps = context.env.futurebrands_db.prepare('SELECT * from Items');
 	const data = await ps.first();
   
