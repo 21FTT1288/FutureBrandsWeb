@@ -187,6 +187,6 @@
 
 })(window.jQuery);
 
-const test = db.prepare('SELECT * FROM Item WHERE Item_name = Barang')
+const test = db.prepare('SELECT * FROM Item')
 
 document.getElementById("test").innerHTML = test;
