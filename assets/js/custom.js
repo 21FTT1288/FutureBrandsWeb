@@ -187,6 +187,6 @@
 
 })(window.jQuery);
 
-const test = db.prepare('SELECT * FROM Item')
+const test = db.prepare('SELECT * FROM Item');
 
 document.getElementById("test").innerHTML = test;
