@@ -187,6 +187,6 @@
 
 })(window.jQuery);
 
-const test = db.prepare('SELECT * FROM Item');
+const test = context.env.futurebrands_db.prepare('SELECT * FROM Items');
 
 document.getElementById("test").innerHTML = test;
